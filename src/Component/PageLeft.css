@@ -1,0 +1,18 @@
+.contentLeft {
+  margin-left: 45px;
+}
+
+.single {
+  display: flex;
+  color: #f38c69;
+  align-items: center;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 700;
+}
+.text {
+  font-size: 12px;
+  font-weight: 500;
+}
