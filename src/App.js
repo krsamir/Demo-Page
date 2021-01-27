@@ -1,12 +1,22 @@
 import "./App.css";
-import Page1 from "./Component/Page1";
-import Page2 from "./Component/Page2";
-
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Account from "./Component/Account";
+import Home from "./Home";
 function App() {
   return (
     <div className="app">
-      <Page1 />
-      <Page2 />
+      <Router>
+        <Switch>
+          <Route path="/account" component={Account} />
+          <Route exact path="/" component={Home} />
+          <Route
+            path="*"
+            component={() => {
+              return "404 Not Found!!";
+            }}
+          />
+        </Switch>
+      </Router>
     </div>
   );
 }

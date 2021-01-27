@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Page1.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
@@ -10,7 +11,9 @@ function Page1() {
     <div className="page1">
       <div className="header">
         <div className="header__left">
-          <p className="logo">LOGO</p>
+          <Link to="/account" style={{ textDecoration: "none" }}>
+            <p className="logo">LOGO</p>
+          </Link>
           <p className="words">Find Work</p>
           <p className="words">My Jobs</p>
           <p className="words">Reports</p>
